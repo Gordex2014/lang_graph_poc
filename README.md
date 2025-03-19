@@ -59,7 +59,3 @@ python src/lang_poc/main.py
 You may need to set your API keys as environment variables:
 - `ANTHROPIC_API_KEY` for Anthropic Claude models
 - `OPENAI_API_KEY` for OpenAI models
-
-## License
-
-[License information]
