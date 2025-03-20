@@ -39,7 +39,7 @@ def get_requested_resource(state: PromptState) -> PromptState:
         not isinstance(result.content, str) or
         result.content == "I don't know"
     ):
-        raise ValueError("Failed to get requested resource")
+        raise ValueError("Unrelated questions, please ask a question related to FHIR resources")
     
     print(f"Requested resource: {result.content}")
     return add_requested_resource(state, result.content)
