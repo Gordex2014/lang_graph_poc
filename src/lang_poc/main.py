@@ -20,4 +20,8 @@ builder.add_conditional_edges("get_view_definition", check_view_definition)
 builder.add_edge("handle_view_definition", END)
 graph = builder.compile()
 
-state = graph.invoke({"user_question": "What is John Smith's latest blood pressure?", "requested_resource": None, "view_definition": None, "should_retry": False, "retry_count": 0})
+question_1 = "Show me the lab test that were ordered in the hospital but the result were received after discharging"
+question_2 = "What is John Smith's latest blood pressure?"
+question_3 = "Show me the patient's name and address"
+
+state = graph.invoke({"user_question": question_1, "requested_resource": None, "view_definition": None, "should_retry": False, "retry_count": 0})
